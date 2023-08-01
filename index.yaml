@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  sidecarinjector:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-08-01T18:07:53.069091168Z"
+    description: A Helm chart for Kubernetes
+    digest: 1992651818f142a79c5d53d2225c8f429b6a7fdb35b4348457f0f43201a3b4ae
+    name: sidecarinjector
+    urls:
+    - https://github.com/QryptInc/generic-sidecar-injector/releases/download/sidecarinjector-0.1.0/sidecarinjector-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-08-01T18:07:53.069398582Z"
