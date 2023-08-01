@@ -1,5 +1,11 @@
 # A Generic framework for Writing Mutating Webhook Admission Controllers.
 
+This is a forked repo with an added GitHub workflow for publishing the Helm Chart to a chart repository hosted on this repo under the `gh-pages` branch.
+
+The Helm Chart releaser action is used to automate the creation of the Helm Chart and the GitHub page.
+
+Note that the `README.md` on the `gh-pages` branch has minor modifications to pass the liquid syntax checks.
+Other than this message, and the `release.yml` file, there are no changes to the `master` branch.
 
 [![Build Status](https://travis-ci.org/salesforce/generic-sidecar-injector.svg?branch=master)](https://travis-ci.org/salesforce/generic-sidecar-injector)
 [![Go Report Card](https://goreportcard.com/badge/github.com/salesforce/generic-sidecar-injector)](https://goreportcard.com/report/github.com/salesforce/generic-sidecar-injector)
