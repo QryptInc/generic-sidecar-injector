@@ -224,23 +224,21 @@ can be derived at runtime from the pod in which the injection needs to happen.
 For e.g.  lets say your container has a secret whose name is derived from the service account name of the pod. You 
 sidecar config can look like this :-
 
-{% raw %}
 ```
 volumes:
   - name: foo
     secret:
        ### This templated field will come from the pod manifest passed to the mutating webhook controller
        secretName: aws-iam-{% .Spec.ServiceAccountName %}
+  
 ```
-{% endraw %}
 
 Similarly lets say you want to populate an environment variable in the injected container, where the value of the 
 environment variable comes from an annotation in the pod.
 
-{% raw %}
 ```
+
 - name: VAULT_ROLE
   ### This templated field will come from the pod manifest passed to the mutating webhook controller
   value: {% index .Annotations "vault.k8s-integration.sfdc.com/role" %}
 ```
-{% endraw %}
