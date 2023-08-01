@@ -224,6 +224,7 @@ can be derived at runtime from the pod in which the injection needs to happen.
 For e.g.  lets say your container has a secret whose name is derived from the service account name of the pod. You 
 sidecar config can look like this :-
 
+{% raw %}
 ```
 volumes:
   - name: foo
@@ -237,6 +238,7 @@ Similarly lets say you want to populate an environment variable in the injected 
 environment variable comes from an annotation in the pod.
 
 ```
+{% endraw %}
 
 - name: VAULT_ROLE
   ### This templated field will come from the pod manifest passed to the mutating webhook controller
